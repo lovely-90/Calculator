@@ -61,7 +61,11 @@ for(var i = 0;i < button.length;i++)
             for(var j = 0;j < n-3;j++){
             textarea.textContent = textarea.textContent + string[j];
             }
-            condition = false;
+            string = textarea.textContent;
+            if(string[j] == " ")
+                condition = false;
+            else
+            	condition = true;
 		}
 		else{
 			textarea.textContent = '';
